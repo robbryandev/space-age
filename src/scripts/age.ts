@@ -6,13 +6,15 @@ export default class Age {
     this.earthAge = earthAge;
   }
 
-  getAge() {
+  getAge(yearVar: number = this.yearLength) {
     const earthYear = 365;
-    const yearDec = this.yearLength / earthYear;
+    const yearDec = yearVar / earthYear;
     return Math.floor(this.earthAge / yearDec);
   }
 
   mercuryAge() {
-    return 0;
+    const earthYear = 365;
+    const mercYear = earthYear * 0.24;
+    return this.getAge(mercYear);
   }
 }
