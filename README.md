@@ -1,10 +1,10 @@
-# _{Application Name}_
+# Galactic Age Calculator
 
 ## Contributers
 * Robert Bryan
 
 ## Description
-
+A web app to calculate your age given a different amount of days in a year.
 
 ## Technologies Used
 * HTML
@@ -13,9 +13,25 @@
 * Bootstrap
 
 ## Setup/Installation Requirements
+### Requirements
+* Nodejs
+
+### Setup
+* Download repo
+* Install packages
+```js
+npm i
+```
+* Build site
+```js
+npm run build
+```
+* Open dist/index.html in your browser
 
 
 ## Known Bugs
+
+* None
 
 ## Resources
 Font: https://fonts.google.com/specimen/Kanit?sort=popularity
