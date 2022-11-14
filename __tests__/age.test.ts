@@ -42,6 +42,11 @@ describe("Age lifeExpect() method", () => {
     const testAge = new Age();
     expect(testAge.lifeExpect()).toEqual(73);
   });
+
+  test("Should return a mercury average of 304", () => {
+    const testAge = new Age();
+    expect(testAge.lifeExpect(testAge.mercYear)).toEqual(304);
+  });
 });
 
 describe("Age mercuryAge() method", () => {

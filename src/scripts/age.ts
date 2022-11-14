@@ -2,39 +2,38 @@ export default class Age {
   yearLength: number;
   earthAge: number;
   readonly earthYear = 365;
+  readonly mercYear = this.earthYear * 0.24;
+  readonly venusYear = this.earthYear * 0.62;
+  readonly marsYear = this.earthYear * 1.88;
+  readonly jupiYear = this.earthYear * 11.86;
   constructor(yearLength = 365, earthAge = 1) {
     this.yearLength = yearLength;
     this.earthAge = earthAge;
   }
 
-  getAge(yearVar: number = this.yearLength) {
+  getAge(yearVar: number = this.yearLength, age: number = this.earthAge) {
     const yearDec = yearVar / this.earthYear;
-    return Math.floor(this.earthAge / yearDec);
+    return Math.floor(age / yearDec);
   }
 
   lifeExpect(yearVar: number = this.yearLength) {
     const earthExpect = 73;
-    const earthPerc = earthExpect / this.earthYear;
-    return Math.floor(yearVar * earthPerc);
+    return this.getAge(yearVar, earthExpect);
   }
 
   mercuryAge() {
-    const mercYear = this.earthYear * 0.24;
-    return this.getAge(mercYear);
+    return this.getAge(this.mercYear);
   }
 
   venusAge() {
-    const venYear = this.earthYear * 0.62;
-    return this.getAge(venYear);
+    return this.getAge(this.venusYear);
   }
 
   marsAge() {
-    const marYear = this.earthYear * 1.88;
-    return this.getAge(marYear);
+    return this.getAge(this.marsYear);
   }
 
   jupiterAge() {
-    const jYear = this.earthYear * 11.86;
-    return this.getAge(jYear);
+    return this.getAge(this.jupiYear);
   }
 }
