@@ -17,6 +17,11 @@ describe("Age class", () => {
 });
 
 describe("Age getAge() method", () => {
+  test("Should return a default age of 1", () => {
+    let fiveAge = new Age();
+    expect(fiveAge.getAge()).toEqual(1);
+  });
+
   test("Should return an age of 5", () => {
     const spaceYear = 73;
     const testAge = 1;
