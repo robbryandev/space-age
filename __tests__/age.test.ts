@@ -37,6 +37,13 @@ describe("Age getAge() method", () => {
   });
 });
 
+describe("Age lifeExpect() method", () => {
+  test("Should return an earth average of 73", () => {
+    const testAge = new Age();
+    expect(testAge.lifeExpect()).toEqual(73);
+  });
+});
+
 describe("Age mercuryAge() method", () => {
   test("Should return an age of 41", () => {
     const spaceYear = 365;
