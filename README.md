@@ -12,6 +12,8 @@ A web app to calculate your age given a different amount of days in a year.
 * Bootstrap
 * Animate.css
 * Javascript
+* Typescript
+* Webpack
 * JQuery
 
 ## Setup/Installation Requirements
