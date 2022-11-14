@@ -17,6 +17,8 @@
 
 ## Known Bugs
 
+## Resources
+Font: https://fonts.google.com/specimen/Kanit?sort=popularity
 
 ## License
 
