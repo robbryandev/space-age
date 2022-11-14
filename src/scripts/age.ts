@@ -23,6 +23,7 @@ export default class Age {
   }
 
   marsAge() {
-    return 0;
+    const marYear = this.earthYear * 1.88;
+    return this.getAge(marYear);
   }
 }

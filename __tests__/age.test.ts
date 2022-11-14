@@ -56,7 +56,7 @@ describe("Age venusAge() method", () => {
 });
 
 describe("Age marsAge() method", () => {
-  test("Should return an age of 16", () => {
+  test("Should return an age of 5", () => {
     const spaceYear = 365;
     const testAge = 10;
     const marAge = new Age(spaceYear, testAge);
