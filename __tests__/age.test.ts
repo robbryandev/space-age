@@ -36,3 +36,12 @@ describe("Age getAge() method", () => {
     expect(tenAge.getAge()).toEqual(10);
   });
 });
+
+describe("Age mercuryAge() method", () => {
+  test("Should return an age of 41", () => {
+    const spaceYear = 365
+    const testAge = 10;
+    const mercAge = new Age(spaceYear, testAge);
+    expect(mercAge.mercuryAge()).toEqual(41);
+  });
+});
