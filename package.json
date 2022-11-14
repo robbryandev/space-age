@@ -49,6 +49,7 @@
     "workbox-webpack-plugin": "6.5.4"
   },
   "dependencies": {
+    "animate.css": "^4.1.1",
     "babel-jest": "^29.3.0",
     "bootstrap": "5.2.2",
     "css-loader": "6.7.1",

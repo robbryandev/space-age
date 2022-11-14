@@ -3,6 +3,7 @@ import * as $ from "jquery";
 import Age from "./scripts/age";
 
 import "bootstrap/dist/css/bootstrap.css";
+import "animate.css";
 import "./assets/css/styles.css";
 
 import space from "./assets/Images/space.jpg";
