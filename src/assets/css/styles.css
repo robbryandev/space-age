@@ -24,7 +24,11 @@
   border-color: var(--second-hover);
 }
 
-label, h1, h3 {
+.center-left {
+  text-indent: -3.5vw;
+}
+
+label, h1, h3, p {
   font-family: 'Kanit', sans-serif;
   color: var(--label-color);
   padding-top: 2vh;

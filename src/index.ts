@@ -51,6 +51,11 @@ $("#jupi-btn").on("click", () => {
   yearInput.val(settingAge.jupiYear.toFixed(2));
 });
 
+// random input button
+$("#rand-btn").on("click", () => {
+  yearInput.val(Math.floor(Math.random() * 1000));
+});
+
 // Body background image
 
 $("body")[0].style.backgroundImage = `url(${space})`;
