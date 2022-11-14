@@ -5,4 +5,8 @@ export default class Age {
     this.yearLength = yearLength;
     this.earthAge = earthAge;
   }
+
+  getAge() {
+    return 0;
+  }
 }

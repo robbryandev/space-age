@@ -15,3 +15,12 @@ describe("Age class", () => {
     expect(testAge.earthAge).toEqual(1);
   });
 });
+
+describe("Age getAge() method", () => {
+  test("Should return an age of 5", () => {
+    const spaceYear = 73;
+    const testAge = 1;
+    let fiveAge = new Age(spaceYear, testAge);
+    expect(fiveAge.getAge()).toEqual(5);
+  });
+});
