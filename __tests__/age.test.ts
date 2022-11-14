@@ -54,3 +54,12 @@ describe("Age venusAge() method", () => {
     expect(venAge.venusAge()).toEqual(16);
   });
 });
+
+describe("Age marsAge() method", () => {
+  test("Should return an age of 16", () => {
+    const spaceYear = 365;
+    const testAge = 10;
+    const marAge = new Age(spaceYear, testAge);
+    expect(marAge.marsAge()).toEqual(5);
+  });
+});

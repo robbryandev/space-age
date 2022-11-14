@@ -21,4 +21,8 @@ export default class Age {
     const venYear = this.earthYear * 0.62;
     return this.getAge(venYear);
   }
+
+  marsAge() {
+    return 0;
+  }
 }
