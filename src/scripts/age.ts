@@ -21,6 +21,10 @@ export default class Age {
     return this.getAge(yearVar, earthExpect);
   }
 
+  personalExpect(yearVar: number = this.yearLength) {
+    return 0;
+  }
+
   mercuryAge() {
     return this.getAge(this.mercYear);
   }

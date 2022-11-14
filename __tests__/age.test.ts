@@ -39,7 +39,7 @@ describe("Age getAge() method", () => {
 
 describe("Age lifeExpect() method", () => {
   let testAge: Age;
-  
+
   beforeEach(() => {
     testAge = new Age();
   });
@@ -62,6 +62,14 @@ describe("Age lifeExpect() method", () => {
 
   test("Should return a jupiter average of 6", () => {
     expect(testAge.lifeExpect(testAge.jupiYear)).toEqual(6);
+  });
+});
+
+describe("Age personalExpect() method", () => {
+  test("Should return 3", () => {
+    const testAge = new Age();
+    testAge.earthAge = 70;
+    expect(testAge.personalExpect()).toEqual(3);
   });
 });
 
