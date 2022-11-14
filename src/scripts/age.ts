@@ -26,4 +26,8 @@ export default class Age {
     const marYear = this.earthYear * 1.88;
     return this.getAge(marYear);
   }
+
+  jupiterAge() {
+    return 0;
+  }
 }

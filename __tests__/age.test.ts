@@ -63,3 +63,12 @@ describe("Age marsAge() method", () => {
     expect(marAge.marsAge()).toEqual(5);
   });
 });
+
+describe("Age jupiterAge() method", () => {
+  test("Should return an age of 4", () => {
+    const spaceYear = 365;
+    const testAge = 50;
+    const jAge = new Age(spaceYear, testAge);
+    expect(jAge.jupiterAge()).toEqual(4);
+  });
+});
