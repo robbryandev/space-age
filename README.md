@@ -35,6 +35,7 @@ npm run build
 
 ## Resources
 Font: https://fonts.google.com/specimen/Kanit?sort=popularity
+Background: https://www.publicdomainpictures.net/pictures/420000/nahled/sterne-himmel-weltall-hintergrund.jpg
 
 ## License
 
