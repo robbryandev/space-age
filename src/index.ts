@@ -5,6 +5,8 @@ import Age from "./scripts/age";
 import "bootstrap/dist/css/bootstrap.css";
 import "./assets/css/styles.css";
 
+import space from "./assets/Images/space.jpg";
+
 // Input forms
 const yearInput = $("#days");
 const settingAge = new Age();
@@ -48,3 +50,7 @@ $("#mars-btn").on("click", () => {
 $("#jupi-btn").on("click", () => {
   yearInput.val(settingAge.jupiYear.toFixed(2));
 });
+
+// Body background image
+
+$("body")[0].style.backgroundImage = `url(${space})`;
