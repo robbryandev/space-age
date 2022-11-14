@@ -38,14 +38,30 @@ describe("Age getAge() method", () => {
 });
 
 describe("Age lifeExpect() method", () => {
+  let testAge: Age;
+  
+  beforeEach(() => {
+    testAge = new Age();
+  });
+
   test("Should return an earth average of 73", () => {
-    const testAge = new Age();
     expect(testAge.lifeExpect()).toEqual(73);
   });
 
   test("Should return a mercury average of 304", () => {
-    const testAge = new Age();
     expect(testAge.lifeExpect(testAge.mercYear)).toEqual(304);
+  });
+  
+  test("Should return a venus average of 117", () => {
+    expect(testAge.lifeExpect(testAge.venusYear)).toEqual(117);
+  });
+
+  test("Should return a mars average of 38", () => {
+    expect(testAge.lifeExpect(testAge.marsYear)).toEqual(38);
+  });
+
+  test("Should return a jupiter average of 6", () => {
+    expect(testAge.lifeExpect(testAge.jupiYear)).toEqual(6);
   });
 });
 
