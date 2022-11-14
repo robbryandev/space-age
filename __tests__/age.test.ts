@@ -28,4 +28,11 @@ describe("Age getAge() method", () => {
     let fiveAge = new Age(spaceYear, testAge);
     expect(fiveAge.getAge()).toEqual(5);
   });
+
+  test("Should return an age of 10", () => {
+    const spaceYear = 365 * 2;
+    const testAge = 20;
+    let tenAge = new Age(spaceYear, testAge);
+    expect(tenAge.getAge()).toEqual(10);
+  });
 });
