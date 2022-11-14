@@ -39,9 +39,18 @@ describe("Age getAge() method", () => {
 
 describe("Age mercuryAge() method", () => {
   test("Should return an age of 41", () => {
-    const spaceYear = 365
+    const spaceYear = 365;
     const testAge = 10;
     const mercAge = new Age(spaceYear, testAge);
     expect(mercAge.mercuryAge()).toEqual(41);
+  });
+});
+
+describe("Age venusAge() method", () => {
+  test("Should return an age of 16", () => {
+    const spaceYear = 365;
+    const testAge = 10;
+    const venAge = new Age(spaceYear, testAge);
+    expect(venAge.venusAge()).toEqual(16);
   });
 });

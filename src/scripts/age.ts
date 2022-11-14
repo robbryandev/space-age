@@ -17,4 +17,8 @@ export default class Age {
     const mercYear = earthYear * 0.24;
     return this.getAge(mercYear);
   }
+
+  venusAge() {
+    return 0;
+  }
 }
