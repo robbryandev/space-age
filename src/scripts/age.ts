@@ -24,7 +24,7 @@ export default class Age {
   personalExpect(yearVar: number = this.yearLength) {
     const expected = this.lifeExpect(yearVar);
     const left = this.getAge(yearVar) - expected;
-    let res;
+    let res: number;
     left < 0 ? res = left * -1 : res = left;
     return res;
   }
