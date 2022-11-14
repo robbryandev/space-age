@@ -67,9 +67,13 @@ describe("Age lifeExpect() method", () => {
 
 describe("Age personalExpect() method", () => {
   test("Should return 3", () => {
-    const testAge = new Age();
-    testAge.earthAge = 70;
+    const testAge = new Age(365, 70);
     expect(testAge.personalExpect()).toEqual(3);
+  });
+
+  test("Should return 10", () => {
+    const testAge = new Age(365, 83);
+    expect(testAge.personalExpect()).toEqual(10);
   });
 });
 

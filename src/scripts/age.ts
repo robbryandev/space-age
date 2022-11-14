@@ -22,7 +22,11 @@ export default class Age {
   }
 
   personalExpect(yearVar: number = this.yearLength) {
-    return 0;
+    const expected = this.lifeExpect(yearVar);
+    const left = this.getAge(yearVar) - expected;
+    let res;
+    left < 0 ? res = left * -1 : res = left;
+    return res;
   }
 
   mercuryAge() {
