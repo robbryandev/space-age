@@ -7,6 +7,8 @@ export default class Age {
   }
 
   getAge() {
-    return 0;
+    const earthYear = 365;
+    const yearDec = this.yearLength / earthYear;
+    return Math.floor(this.earthAge / yearDec);
   }
 }
