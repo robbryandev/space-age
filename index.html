@@ -1,0 +1,12 @@
+<!doctype html><html><head><meta charset="utf-8"/><title>Space Age Calculator</title><script defer="defer" src="bundle.js"></script></head><body><div class="container"><form><div class="form-group w-50 m-auto text-center"><label for="age">Age</label> <input type="number" class="form-control mt-3 text-center" id="age" value="0" min="0"> <label for="days">Days in a year</label> <input type="number" class="form-control mt-3 text-center" id="days" value="365" min="1"></div><br><div class="text-center"><button type="submit" class="btn btn-primary">Calculate</button></div></form><br><div class="w-50 m-auto text-center" id="result"></div></div><script>if ("serviceWorker" in navigator) {
+            window.addEventListener("load", () => {
+                navigator.serviceWorker
+                    .register("service-worker.js")
+                    .then((registration) => {
+                        console.log("Service Worker registered: ", registration);
+                    })
+                    .catch((registrationError) => {
+                        console.error("Service Worker registration failed: ", registrationError);
+                    });
+            });
+        }</script></body></html>
