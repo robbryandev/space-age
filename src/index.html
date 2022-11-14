@@ -1,51 +1,52 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
-    <title>Space Age Calculator</title>
+  <meta charset="utf-8" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+  <title>Space Age Calculator</title>
 </head>
 <body>
-    <div class="container">
-        <form>
-            <div class="form-group w-50 m-auto text-center">
-                <label for="age">Age</label>
-                <input type="number" class="form-control mt-3 text-center" id="age" value="0" min="0">
-                <label for="days">Days in a year</label>
-                <input type="number" class="form-control mt-3 text-center" id="days" value="365" min="1" step="0.1">
-            </div>
-            <br>
-            <div class="text-center">
-                <div class="btn-group text-center mb-2">
-                    <button type="button" class="btn btn-secondary" id="earth-btn">Earth</button>
-                    <button type="button" class="btn btn-secondary" id="merc-btn">Mercury</button>
-                    <button type="button" class="btn btn-secondary" id="venus-btn">Venus</button>
-                    <button type="button" class="btn btn-secondary" id="mars-btn">Mars</button>
-                    <button type="button" class="btn btn-secondary" id="jupi-btn">Jupiter</button>
-                </div>
-            </div>
-            <div class="text-center">
-                <button type="submit" class="btn btn-primary">Calculate</button>
-            </div>
-        </form>
-        <br>
-        <div class="w-50 m-auto text-center" id="result"></div>
-    </div>
-    <script>
-        if ("serviceWorker" in navigator) {
-            window.addEventListener("load", () => {
-                navigator.serviceWorker
-                    .register("service-worker.js")
-                    .then((registration) => {
-                        console.log("Service Worker registered: ", registration);
-                    })
-                    .catch((registrationError) => {
-                        console.error("Service Worker registration failed: ", registrationError);
-                    });
-            });
-        }
-    </script>
+  <div class="container">
+    <h1>Space Age Calculator</h1>
+    <form>
+      <div class="form-group w-50 m-auto text-center">
+        <label for="age">Age</label>
+        <input type="number" class="form-control mt-3 text-center" id="age" value="0" min="0">
+        <label for="days">Days in a year</label>
+        <input type="number" class="form-control mt-3 text-center" id="days" value="365" min="1" step="0.1">
+      </div>
+      <br>
+      <div class="text-center">
+        <div class="btn-group text-center mb-2">
+          <button type="button" class="btn btn-secondary" id="earth-btn">Earth</button>
+          <button type="button" class="btn btn-secondary" id="merc-btn">Mercury</button>
+          <button type="button" class="btn btn-secondary" id="venus-btn">Venus</button>
+          <button type="button" class="btn btn-secondary" id="mars-btn">Mars</button>
+          <button type="button" class="btn btn-secondary" id="jupi-btn">Jupiter</button>
+        </div>
+      </div>
+      <div class="text-center">
+        <button type="submit" class="btn btn-primary">Calculate</button>
+      </div>
+    </form>
+    <br>
+    <div class="w-50 m-auto text-center" id="result"></div>
+  </div>
+  <script>
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("load", () => {
+        navigator.serviceWorker
+          .register("service-worker.js")
+          .then((registration) => {
+            console.log("Service Worker registered: ", registration);
+          })
+          .catch((registrationError) => {
+            console.error("Service Worker registration failed: ", registrationError);
+          });
+      });
+    }
+  </script>
 </body>
 </html>
