@@ -12,8 +12,10 @@ export default class Age {
     return Math.floor(this.earthAge / yearDec);
   }
 
-  lifeExpect() {
-    return 0;
+  lifeExpect(yearVar: number = this.yearLength) {
+    const earthExpect = 73;
+    const earthPerc = earthExpect / this.earthYear;
+    return Math.floor(yearVar * earthPerc);
   }
 
   mercuryAge() {
