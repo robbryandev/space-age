@@ -1,0 +1,34 @@
+:root {
+  --background: rgb(43, 41, 41);
+  --primary-color: rgb(114, 13, 187);
+  --primary-hover: rgb(94, 11, 154);
+  --second-hover: rgb(75, 0, 128);
+  --label-color: white;
+}
+
+.btn-primary {
+  accent-color: var(--primary-color);
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+  accent-color: var(--primary-hover);
+  background-color: var(--primary-hover);
+  border-color: var(--primary-hover);
+}
+
+.btn-secondary:hover {
+  accent-color: var(--second-hover);
+  background-color: var(--second-hover);
+  border-color: var(--second-hover);
+}
+
+body {
+  background-color: var(--background);
+}
+
+label {
+  color: var(--label-color);
+  padding-top: 2vh;
+}
