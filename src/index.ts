@@ -5,8 +5,12 @@ import Age from "./scripts/age";
 import "bootstrap/dist/css/bootstrap.css";
 import "./assets/css/styles.css";
 
+// Input forms
+const yearInput = $("#days");
+const settingAge = new Age();
+
 function handleForm() {
-  const yearDays = Number($("#days").val());
+  const yearDays = Number(yearInput.val());
   const ageNum = Number($("#age").val());
   const spaceAge = new Age(yearDays, ageNum);
   $("#result").html(`
@@ -21,4 +25,26 @@ function handleForm() {
 $("form").on("submit", (event) => {
   event.preventDefault();
   handleForm();
+});
+
+// Shorthand buttons
+
+$("#earth-btn").on("click", () => {
+  yearInput.val(settingAge.earthYear.toFixed(2));
+});
+
+$("#merc-btn").on("click", () => {
+  yearInput.val(settingAge.mercYear.toFixed(2));
+});
+
+$("#venus-btn").on("click", () => {
+  yearInput.val(settingAge.venusYear.toFixed(2));
+});
+
+$("#mars-btn").on("click", () => {
+  yearInput.val(settingAge.marsYear.toFixed(2));
+});
+
+$("#jupi-btn").on("click", () => {
+  yearInput.val(settingAge.jupiYear.toFixed(2));
 });
