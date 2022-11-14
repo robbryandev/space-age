@@ -1,6 +1,6 @@
 export default class Age {
   yearLength: number;
-  constructor() {
-    0;
+  constructor(yearLength = 365) {
+    this.yearLength = yearLength;
   }
 }
