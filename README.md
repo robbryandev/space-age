@@ -9,8 +9,10 @@ A web app to calculate your age given a different amount of days in a year.
 ## Technologies Used
 * HTML
 * CSS
-* Javascript
 * Bootstrap
+* Animate.css
+* Javascript
+* JQuery
 
 ## Setup/Installation Requirements
 ### Requirements
