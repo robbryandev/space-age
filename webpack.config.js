@@ -39,7 +39,14 @@ const config = {
       },
       {
         test: /\.txt$/i,
-        use: 'raw-loader',
+        use: [
+          {
+            loader: 'raw-loader',
+            options: {
+              esModule: false,
+            }
+          }
+        ]
       },
       {
         test: /\.m?js/,
