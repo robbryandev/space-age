@@ -8,11 +8,14 @@
   <title>Space Age Calculator</title>
 </head>
 <body>
+  <!-- Main div -->
   <div class="container">
+    <!-- Dynamic Title -->
     <div id="title-text">
     </div>
     <form>
       <div class="form-group w-50 m-auto text-center">
+        <!-- Age input -->
         <p class="text-center animate__animated animate__fadeIn">Age</p>
         <div id="age-div" class="input-group animate__animated animate__fadeInDown mb-1">
           <div class="input-group-prepend">
@@ -20,6 +23,7 @@
           </div>
           <input type="number" class="form-control text-center center-left" id="age" value="0" min="0">
         </div>
+        <!-- Year input -->
         <p class="text-center animate__animated animate__fadeIn">Days in a year</p>
         <div id="year-div" class="input-group animate__animated animate__fadeInDown mb-2">
           <div class="input-group-prepend">
@@ -29,6 +33,7 @@
         </div>
       </div>
       <br>
+      <!-- Shorthand buttons -->
       <div class="text-center">
         <div class="btn-group text-center mb-2 animate__animated animate__jackInTheBox">
           <button type="button" class="btn btn-secondary" id="earth-btn">Earth</button>
@@ -38,11 +43,13 @@
           <button type="button" class="btn btn-secondary" id="jupi-btn">Jupiter</button>
         </div>
       </div>
+      <!-- Submit button -->
       <div class="text-center">
         <button type="submit" class="btn btn-primary animate__animated animate__flip">Calculate</button>
       </div>
     </form>
     <br>
+    <!-- Result div -->
     <div class="w-50 m-auto text-center" id="result"></div>
   </div>
   <script>

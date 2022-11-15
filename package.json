@@ -1,7 +1,7 @@
 {
-  "name": "galactic-age",
+  "name": "space-age",
   "version": "1.0.0",
-  "description": "galactic age calculator",
+  "description": "space age calculator",
   "main": "index.js",
   "types": "./src/index.d.ts",
   "scripts": {

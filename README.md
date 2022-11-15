@@ -1,4 +1,4 @@
-# [Galactic Age Calculator](https://robbryandev.github.io/galactic-age/)
+# [Space Age Calculator](https://robbryandev.github.io/space-age/)
 
 ## Contributers
 * Robert Bryan

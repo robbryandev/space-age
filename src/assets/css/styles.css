@@ -1,3 +1,5 @@
+/* Variables */
+
 :root {
   --background: rgb(43, 41, 41);
   --title-color: rgb(180, 146, 205);
@@ -6,6 +8,8 @@
   --second-hover: rgb(75, 0, 128);
   --label-color: white;
 }
+
+/* Classes */
 
 .btn-primary {
   accent-color: var(--primary-color);
@@ -28,6 +32,8 @@
 .center-left {
   text-indent: -3.5vw;
 }
+
+/* Elements */
 
 pre {
   color: var(--title-color);

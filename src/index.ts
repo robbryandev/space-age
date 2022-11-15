@@ -1,13 +1,17 @@
+// module imports
 import "bootstrap";
 import * as $ from "jquery";
 import Age from "./scripts/age";
 
+// css imports
 import "bootstrap/dist/css/bootstrap.css";
 import "animate.css";
 import "./assets/css/styles.css";
 
+// image imports
 import space from "./assets/Images/space.jpg";
 
+// text imports
 import title from "./assets/text/title.txt";
 
 // Input forms
