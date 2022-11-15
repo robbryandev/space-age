@@ -13,12 +13,17 @@
     </div>
     <form>
       <div class="form-group w-50 m-auto text-center">
-        <label class="animate__animated animate__fadeIn" for="age">Age</label>
-        <input type="number" class="form-control mt-3 text-center animate__animated animate__fadeInDown" id="age" value="0" min="0">
-        <p class="text-center animate__animated animate__fadeIn">Days in a year</p>
-        <div class="input-group animate__animated animate__fadeInDown">
+        <p class="text-center animate__animated animate__fadeIn">Age</p>
+        <div id="age-div" class="input-group animate__animated animate__fadeInDown mb-1">
           <div class="input-group-prepend">
-            <button type="button" class="btn btn-secondary" id="rand-btn">Random</button>
+            <button type="button" class="btn btn-secondary" id="rand-age-btn">Random</button>
+          </div>
+          <input type="number" class="form-control text-center center-left" id="age" value="0" min="0">
+        </div>
+        <p class="text-center animate__animated animate__fadeIn">Days in a year</p>
+        <div id="year-div" class="input-group animate__animated animate__fadeInDown mb-2">
+          <div class="input-group-prepend">
+            <button type="button" class="btn btn-secondary" id="rand-year-btn">Random</button>
           </div>
           <input type="number" class="form-control text-center center-left" id="days" value="365" min="1" step="0.1">
         </div>

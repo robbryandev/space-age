@@ -12,11 +12,12 @@ import title from "./assets/text/title.txt";
 
 // Input forms
 const yearInput = $("#days");
+const ageInput = $("#age");
 const settingAge = new Age();
 
 function handleForm() {
   const yearDays = Number(yearInput.val());
-  const ageNum = Number($("#age").val());
+  const ageNum = Number(ageInput.val());
   const spaceAge = new Age(yearDays, ageNum);
   $("#result").html(`
     <div class="animate__animated animate__fadeInUp">
@@ -57,7 +58,12 @@ $("#jupi-btn").on("click", () => {
 });
 
 // random input button
-$("#rand-btn").on("click", () => {
+
+$("#rand-age-btn").on("click", () => {
+  ageInput.val(Math.floor(Math.random() * 150));
+});
+
+$("#rand-year-btn").on("click", () => {
   yearInput.val(Math.floor(Math.random() * 1000));
 });
 
