@@ -8,6 +8,8 @@ import "./assets/css/styles.css";
 
 import space from "./assets/Images/space.jpg";
 
+import title from "./assets/text/title.txt";
+
 // Input forms
 const yearInput = $("#days");
 const settingAge = new Age();
@@ -62,3 +64,6 @@ $("#rand-btn").on("click", () => {
 // Body background image
 
 $("body")[0].style.backgroundImage = `url(${space})`;
+$("#title-text").html(`
+  <pre class="text-center animate__animated animate__fadeIn">${title}</pre>
+`);

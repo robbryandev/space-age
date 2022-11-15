@@ -38,6 +38,10 @@ const config = {
         use: ["style-loader", "css-loader"]
       },
       {
+        test: /\.txt$/i,
+        use: 'raw-loader',
+      },
+      {
         test: /\.m?js/,
         type: "javascript/auto"
       },
